@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="index.html">Home</a>
+      <a href="form.html">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+      <div>
+        <label for="FirstName">First Name:</label>
+      <input type="text" name="FirstName" id="FirstName">
+      </div>
+      <div> 
+        <label for="LastName">Last Name:</label>
+        <input type="text" name="LastName" id="LastName">
+      </div>
+      <div> 
+        <p>Please select your favourite language:</p>
+        <input type="radio" value="1" id="language1" name="language">
+        <label for="language1">C#</label><br>
+        <input type="radio" value="2" id="language2" name="language">
+        <label for="language2">JavaScript</label><br>
+        <input type="radio" value="3" id="language3" name="language">
+        <label for="language3">Python</label>
+      </div>
+      <div> 
+        
+        <input type="checkbox" value="1" id="vehicle1" name="vehicle">
+        <label for="vehicle1">Car</label><br>
+        <input type="checkbox" value="2" id="vehicle2" name="vehicle">
+        <label for="vehicle2">Van</label><br>
+        <input type="checkbox" value="3" id="vehicle3" name="vehicle">
+        <label for="vehicle3">Motorcycle</label>
+      </div>
+      <div>
+        <p>Please select your car brand:</p>
+        <label for="carBrand">Car Brands:</label>
+        <select name="Car Brand" id="carBrand">
+          <option value="" default>Toyota</option>
+          <option value="">Nissan</option>
+          <option value="">BMW</option>
+          <option value="">Ford</option>
+          <option value="">Tesla</option>
+        </select>
+      </div>
+      
+      <button type="submit">Submit Form</button>
+    </form>
+    
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>
