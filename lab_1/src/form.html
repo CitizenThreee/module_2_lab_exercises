@@ -14,10 +14,10 @@
   </header>
 
   <main>
-    <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <form method="POST" action="http://localhost:3000/profile">
       <div>
         <label for="FirstName">First Name:</label>
-      <input type="text" name="FirstName" id="FirstName">
+        <input type="text" name="FirstName" id="FirstName">
       </div>
       <div> 
         <label for="LastName">Last Name:</label>
@@ -33,7 +33,7 @@
         <label for="language3">Python</label>
       </div>
       <div> 
-        
+        <p>Please select your owned vehicles:</p>
         <input type="checkbox" value="1" id="vehicle1" name="vehicle">
         <label for="vehicle1">Car</label><br>
         <input type="checkbox" value="2" id="vehicle2" name="vehicle">
@@ -45,11 +45,11 @@
         <p>Please select your car brand:</p>
         <label for="carBrand">Car Brands:</label>
         <select name="Car Brand" id="carBrand">
-          <option value="" default>Toyota</option>
-          <option value="">Nissan</option>
-          <option value="">BMW</option>
-          <option value="">Ford</option>
-          <option value="">Tesla</option>
+          <option value="1" default>Toyota</option>
+          <option value="2">Nissan</option>
+          <option value="3">BMW</option>
+          <option value="4">Ford</option>
+          <option value="5">Tesla</option>
         </select>
       </div>
       
