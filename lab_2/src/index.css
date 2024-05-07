@@ -41,7 +41,7 @@ article {
     border: 10px solid black;
     outline: 10px solid #333;
     border-radius: 50%;
-    background: url("../assets/images/img1.png") no-repeat;
+    background: url("assets/images/img1.png") no-repeat;
 }
 
 /* III. Positioning */
