@@ -1,0 +1,141 @@
+:root {
+    --text-primary: black;
+    --text-heading: rgb(14, 5, 80);
+    --background-primary: rgb(248, 248, 248);
+    --background-secondary: rgb(211, 211, 211);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--background-secondary);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.skills li {
+    width: 50%;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0px 10%;
+    padding: 2vw 5vw;
+    background-color: var(--background-primary);
+}
+
+.tag + p, .tag + ul {
+    clear: both;
+}
+
+.flex-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.display-block {
+    display:block;
+}
+
+.flex-body {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+#section-1 {
+    flex-basis: 49%;
+}
+#section-2 {
+    flex-basis: 49%;
+}
+#section-3 {
+    flex-basis: 100%;
+}
+#section-4 {
+    flex-basis: 100%;
+}
+#section-5 {
+    flex-basis: 28%;
+}
+#section-6 {
+    flex-basis: 70%;
+}
+
+section {
+    margin: 1vh 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-clear-top {
+    margin-top: 0;
+}
+
+.margin-clear-bottom {
+    margin-bottom: 0;
+}
+
+hr {
+    border: 1.5px solid var(--text-heading);
+}
+
+@media screen and (max-width: 1300px){
+    .skills li { width: 100%; }
+}
+
+@media screen and (max-width: 790px){
+    .float-right {
+        float: none;
+        clear: both;
+    }
+    
+    .skills li { width: 33.33%; }
+    .flex-container { margin: 0 5%; }
+    .flex-header { margin-top: 2vh; }
+    .flex-body { margin-bottom: 2vh; }
+    .text-right { text-align: left; }
+    #section-1 { flex-basis: 100%; }
+    #section-2 { flex-basis: 100%; }
+    #section-5 { flex-basis: 100%; }
+    #section-6 { flex-basis: 100%; }
+}
+
+@media screen and (max-width: 425px){
+    h1{ font-size: 2.3em; }
+    h2{ font-size: 1.4em; }
+    h3{ 
+        font-size: 0.9em;
+        margin: 5px;
+    }
+    p, li { font-size: 0.8em; }
+    li {margin: 2px 0;}
+    .text-small{
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .skills li { width: 50%; }
+}
