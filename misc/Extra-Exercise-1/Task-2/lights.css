@@ -1,0 +1,32 @@
+:root {
+    --light-colour-1-on: rgb(255, 93, 93);
+    --light-colour-1-off: rgb(58, 28, 28);
+    --light-colour-2-on: rgb(88, 255, 88);
+    --light-colour-2-off: rgb(34, 58, 34);
+}
+
+body{
+    background-color: black;
+}
+
+.red-light {
+    background-color: var(--light-colour-1-off);
+}
+
+.green-light {
+    background-color: var(--light-colour-2-off);
+}
+
+#lights-container {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.circle {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+}

@@ -1,0 +1,55 @@
+:root {
+    --light-colour-1-on: rgb(255, 93, 93);
+    --light-colour-1-off: rgb(58, 28, 28);
+    --light-colour-2-on: rgb(88, 255, 88);
+    --light-colour-2-off: rgb(34, 58, 34);
+}
+
+body{
+    background-color: black;
+}
+
+@keyframes red-lights {
+    0% { background-color: var(--light-colour-1-off);}
+    49% { background-color: var(--light-colour-1-off);}
+    50% { background-color: var(--light-colour-1-on);}
+    99% { background-color: var(--light-colour-1-on);}
+    100% { background-color: var(--light-colour-1-off);}
+}
+
+@keyframes green-lights {
+    0% { background-color: var(--light-colour-2-off);}
+    49% { background-color: var(--light-colour-2-off);}
+    50% { background-color: var(--light-colour-2-on);}
+    99% { background-color: var(--light-colour-2-on);}
+    100% { background-color: var(--light-colour-2-off);}
+}
+
+.red-light {
+    background-color: var(--light-colour-1-on);
+    animation-name: red-lights;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.green-light {
+    background-color: var(--light-colour-2-on);
+    animation-name: green-lights;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#lights-container {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

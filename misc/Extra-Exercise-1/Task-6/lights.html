@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="lights.css">
+</head>
+<body>
+    <div id="lights-container">
+        <div class="circle red-light"></div>
+        <div class="circle green-light"></div>
+        <div class="circle red-light"></div>
+        <div class="circle green-light"></div>
+        <div class="circle red-light"></div>
+        <div class="circle green-light"></div>
+        <div class="circle red-light"></div>
+    </div>
+    <div id="input-container" class="container">
+        <label for="user-input" class="field">Set the fade duration in ms (1000ms = 1s): </label>
+        <input type="number" class="field black-text" id="user-input" value="1000">
+
+        <input type="button" name="set-time" value="Set Time" class="field black-text" onclick="ChangeDelay()">
+    </div>
+
+    <div class="container">
+        <label for="user-input" class="field">Set the interval duration in ms (1000ms = 1s): </label>
+        <input type="number" class="field black-text" id="user-interval-input" value="1000">
+
+        <input type="button" name="set-time" value="Set Interval" class="field black-text" onclick="ChangeInterval()">
+    </div>
+
+    <div class="container">
+        <input type="button" name="set-time" value="Stop Display" class="field black-text" id="pause-button" onclick="ToggleLights()">
+    </div>
+    
+</body>
+
+<script src="lights.js"> </script>
+</html>
